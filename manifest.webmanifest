@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wingman</title>
+    <meta name="description" content="AI-powered chat assistant" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Manifest -->
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+
+    <!-- Favicons: fallback first, then theme-aware overrides -->
+    <link rel="icon" type="image/svg+xml" href="icon_light.svg" />
+    <link rel="icon" type="image/png" href="icon_light.png" />
+    <link rel="icon" type="image/svg+xml" href="icon_light.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" href="icon_light.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="icon_dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" href="icon_dark.png" media="(prefers-color-scheme: dark)" />
+
+    <!-- Theme colors -->
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+
+    <!-- PWA / Mobile -->
+    <link rel="apple-touch-icon" sizes="512x512" href="icon_app.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Prevent theme flashing by setting the dark class immediately -->
+    <script>
+      (() => {
+        // Get stored theme or use system preference
+        const stored = localStorage.getItem("app_theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        // Determine if we should use dark mode
+        const shouldBeDark = stored === "dark" || (stored !== "light" && systemDark);
+
+        // Apply dark class immediately if needed
+        if (shouldBeDark) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-D_4Kb2lw.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-C0FnF6B9.js">
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-CKeovgl0.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-dom-CtKPZwSP.js">
+    <link rel="modulepreload" crossorigin href="/assets/compiler-runtime-BcBbgPWa.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-CsO5mA7l.js">
+    <link rel="modulepreload" crossorigin href="/assets/trace-api-oJEqgtuc.js">
+    <link rel="modulepreload" crossorigin href="/assets/config-CW1_9kzi.js">
+    <link rel="modulepreload" crossorigin href="/assets/modelCatalog-Bvi-te9l.js">
+    <link rel="modulepreload" crossorigin href="/assets/dialog-He61OnwK.js">
+    <link rel="modulepreload" crossorigin href="/assets/fileTypes-BZZPQvxY.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-Czpn1I53.js">
+    <link rel="modulepreload" crossorigin href="/assets/sandbox-CB68M_Gu.js">
+    <link rel="modulepreload" crossorigin href="/assets/fileContent-DOhwT6Cs.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-DMZCQHJW.js">
+    <link rel="modulepreload" crossorigin href="/assets/chevron-right-B62NHsVt.js">
+    <link rel="modulepreload" crossorigin href="/assets/plus-B5I_KEXE.js">
+    <link rel="modulepreload" crossorigin href="/assets/x-B6u8tIyA.js">
+    <link rel="modulepreload" crossorigin href="/assets/cn-Dk_44zMo.js">
+    <link rel="modulepreload" crossorigin href="/assets/useNavigation-BDa4MXFv.js">
+    <link rel="modulepreload" crossorigin href="/assets/purify.es-CYRiAeUx.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CgniNcHt.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
